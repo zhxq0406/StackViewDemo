@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stackViewDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="X6J-Q4-kXA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="技术分享" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCu-Yo-Sb8">
+                                        <rect key="frame" x="266" y="0.0" width="68" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Acme_Monogram_Colour.png" translatesAutoresizingMaskIntoConstraints="NO" id="xrX-ND-LTf">
+                                        <rect key="frame" x="146" y="85" width="308" height="321"/>
+                                        <animations/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lEM-fb-ypE">
+                                        <rect key="frame" x="245" y="470" width="111" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSM-PL-DxS">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="add"/>
+                                                <connections>
+                                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJN-hg-4Ko"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59R-FC-uh4">
+                                                <rect key="frame" x="60" y="0.0" width="51" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="remove"/>
+                                                <connections>
+                                                    <action selector="remove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KlH-qC-AZC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FOD-si-YuJ">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iuz-Mz-nkW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FOD-si-YuJ" secondAttribute="trailing" id="6nn-Q4-pZP"/>
+                            <constraint firstItem="FOD-si-YuJ" firstAttribute="top" secondItem="X6J-Q4-kXA" secondAttribute="bottom" id="7Jw-pu-Tqv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FOD-si-YuJ" secondAttribute="bottom" id="NYl-SF-ki1"/>
+                            <constraint firstItem="X6J-Q4-kXA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UQZ-Bn-xyn"/>
+                            <constraint firstItem="X6J-Q4-kXA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VDG-i5-oCT"/>
+                            <constraint firstAttribute="trailing" secondItem="X6J-Q4-kXA" secondAttribute="trailing" id="hg9-q2-mkm"/>
+                            <constraint firstItem="FOD-si-YuJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nhF-PX-SCu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomStackView" destination="FOD-si-YuJ" id="UvH-EJ-LbD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432" y="281"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Acme_Monogram_Colour.png" width="308" height="321"/>
+    </resources>
+</document>
